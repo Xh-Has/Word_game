@@ -171,7 +171,6 @@ def update_hand(hand:dict, word) -> dict:
     hand: dictionary (string -> int)    
     returns: dictionary (string -> int)
     # """
-    # hand:dict = hand
     dict_word = get_frequency_dict(word)
     hand_copy = hand.copy()
     
@@ -211,10 +210,10 @@ def is_valid_word(word, hand, word_list):
             return False 
     potential_words = [ x for x in word_list if\
                     ((word[0] == x[0] or word[0] == '*') and len(x) == len(word))] 
-    #checks if the word is contained in the potential_list (sublist of word_list)
+    # it checks if the word is contained in the potential_list (sublist of word_list)
     lista = []
     for guess in potential_words:
-        for i in range(1,len(word)): #checks if the letters are the same from the second letter and after (the first letter is checked in potential_words)
+        for i in range(1,len(word)): # it checks if the letters are the same from the second letter and after (the first letter is checked in potential_words)
             if word[i] == guess[i]:
                 lista += [True]
                 if len(lista) == (len(word)-1) and all(lista): #(len(word)-1) because it is checked from the second letter
@@ -246,7 +245,7 @@ def calculate_handlen(hand):
     hand: dictionary (string-> int)
     returns: integer
     """
-    somma = sum(hand.values())  #fa direttamente la somma dei valori (invece che fare il loop, si può fare anche per keys ..o liste ..)
+    somma = sum(hand.values())
     return somma
 # print(calculate_handlen({'n': 1, 'h': 1, '*': 1, 'y': 1, 'd':1, 'w':1, 'e': 2}))
 

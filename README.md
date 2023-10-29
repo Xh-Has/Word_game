@@ -1,2 +1,1 @@
-# Word_game
-In this repository there is my solution of the problem set provided by Mit about the word game
+In this repository there is my solution of the problem set provided by Mit (described in 'MIT6_0001F16_ProblemSet3.pdf') about the word game. You can find my solution in ps3_solution.py file (instead the 'ps3.py' is the original file, without the solution, provided with the test_ps3.py file). The folder about this problem set is downloaded from the following web page: https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/ps3/

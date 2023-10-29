@@ -201,7 +201,7 @@ def is_valid_word(word, hand, word_list):
     """
     hand_copy = hand.copy()
     word = word.lower()
-   #checks if letters in word are available in the hand
+   #it checks if letters in word are available in the hand
     for letter in word:
         if letter in hand.keys() and hand_copy[letter] != 0 :
             hand_copy[letter] -= 1
